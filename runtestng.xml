@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+  <listeners>
+    <listener class-name="testng.RetryListener"></listener>
+    <listener class-name="testng.TestResultListener"></listener>
+  </listeners>
+  <test name="WangZiShoes">
+    <classes>
+      <class name="Headquarters.DdTest">
+        <methods>
+        <include name="InsertDdTest"/>
+       <!-- <include name="UpdateDdTest"/>
+        <include name="shenhe"/>
+        <include name="selectInfo"/>-->
+      </methods>
+      </class> <!-- Headquarters.DdTest -->
+    </classes>
+  </test> <!-- WangZiShoes -->
+</suite> <!-- Default Suite -->
